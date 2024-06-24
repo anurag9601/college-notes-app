@@ -1,0 +1,81 @@
+.creat-box-container{
+    color: #fff;
+    width: 450px;
+    animation: 1.5s fead;
+}
+
+@keyframes fead {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+.creat-box-container .creat-head h1{
+    font-size: 30px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #0077b6, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.creat-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.creat-exit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: #adb5bd;
+}
+
+.creat-exit:hover{
+    color: #fff;
+}
+
+.creat-input-box{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.creat-input-box p{
+    background: linear-gradient(180deg, #0077b6, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+}
+
+.creat-input-box input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #343a40;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.create-btn button{
+    float: right;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}

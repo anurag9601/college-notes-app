@@ -1,0 +1,265 @@
+.sidemenu-container{
+    color: #fff;
+    flex: 1;
+    max-width: 250px;
+    padding: 20px 0;
+    border: 1px solid #343a40;
+    border-radius: 10px;
+    background-color: #49505739;
+    display: flex;
+    flex-direction: column;
+    animation: 1.5s fead;
+}
+
+@keyframes fead {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+.sidemenu-user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sidemenu-user .user-icon{
+    height: 6vmin;
+    width: 6vmin;
+    border: 1px solid #343a40;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #4895ef;
+    cursor: pointer;
+}
+
+.sidemenu-user h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidemenu-options{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 0px;
+    width: 100%;
+    gap: 5px;
+}
+
+.sidemenu-options .all-subjects{
+    background-color: #fff;
+    flex: 1;
+}
+
+.sidemenu-options .sidemenu-items h3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.sidemenu-items{
+    width: 100%;
+    height: 30px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidemenu-items hr{
+    position: absolute;
+    right:0;
+    height: 100%;
+    width: 4px;
+    border: none;
+    outline: none;
+    background: #06d6a0;
+    border-radius: 10px;
+}
+
+.sidemenu-items:hover{
+    background-color: #49505724;
+}
+
+.sidemenu-added-subjects{
+    width: 100%;
+    height: 30px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidemenu-added-subjects hr{
+    position: absolute;
+    right:0;
+    height: 100%;
+    width: 4px;
+    border: none;
+    outline: none;
+    background: #06d6a0;
+    border-radius: 10px;
+}
+
+.sidemenu-added-subjects:hover{
+    background-color: #49505724;
+}
+
+.sidemenu-added-subjects h3{
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.sidemenu-added-subjects h3 div{
+    transform: rotate(-90deg);
+    transition: .1s;
+}
+
+.sidebar-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-archive{
+    width: 100%;
+    height: 30px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar-archive hr{
+    position: absolute;
+    right:0;
+    height: 100%;
+    width: 4px;
+    border: none;
+    outline: none;
+    background: #06d6a0;
+    border-radius: 10px;
+}
+
+
+
+.sidebar-archive h3{
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.sidebar-archive:hover{
+    background-color: #49505724;
+}
+
+.sidebar-settings{
+    width: 100%;
+    height: 30px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar-settings hr{
+    position: absolute;
+    right:0;
+    height: 100%;
+    width: 4px;
+    border: none;
+    outline: none;
+    background: #06d6a0;
+    border-radius: 10px;
+}
+
+.sidebar-settings h3{
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.sidebar-settings:hover{
+    background-color: #49505724;
+}
+
+.sidebar-middle-line{
+    margin-bottom: 10px;
+}
+
+.sidebar-middle-line hr{
+    height: 2px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #6c757d;
+}
+
+.full-flex{
+    flex: 1;
+}
+
+.sidemenu-added-subjects h3 .open{
+    transform: rotate(0deg);
+    transition: .1s;
+}
+
+.user-icon{
+    position: relative
+}
+
+.user-option-menu{
+    position: absolute;
+    top: calc(100% - 40px);
+    left: 0px;
+    opacity: 0;
+    transition: .1s;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: -444;
+}
+
+.user-option-menu ul li{
+    padding: 5px ;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 180px;
+    color: #fff;
+}
+
+.user-option-menu ul li:hover{
+    color: #4895ef;
+}
+
+.user-icon:hover .user-option-menu{
+    opacity: 1;
+    transition: .5s;
+    top: calc(100% + 2px);
+    z-index: 99;
+}
